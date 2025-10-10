@@ -22,10 +22,12 @@ This repository contains my **Web Development Internship Task** for *The Develop
 ---
 
 ## 📂 Folder Structure
-index.html
-sanya_photo.jpg
-sanya_resume.pdf
-README.md
+The-Developers-Arena-Internship-Tasks/
+│
+├── index.html                 # Main portfolio webpage
+├── sanya_photo.jpg            # Portfolio photo
+├── Sanya_Agrawal_Resume.pdf   # Resume file
+└── README.md                  # Project documentation
 ---
 
 ## 📄 Resume

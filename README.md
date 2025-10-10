@@ -42,6 +42,8 @@ The resume can be viewed using the **Open Resume** button on the website.
 - [GitHub](https://github.com/sanya008x)
 
 ---
+## 🌐 Live Demo
+[View Portfolio Website](https://sanya008x.github.io/The-Developers-Arena-Internship-Tasks/)
 
 ## 🔗 Repository Link
 [GitHub Repository](https://github.com/sanya008x/The-Developers-Arena-Internship-Tasks)

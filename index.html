@@ -4,186 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanya Agrawal - Portfolio</title>
-    <!-- Social Media Icons (Font Awesome CDN) -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0 20px;
-        }
 
-        header, section, footer {
-            margin-bottom: 40px;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px 0;
-            border-bottom: 2px solid #ccc;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            padding: 0;
-            gap: 20px;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #0077cc;
-            font-weight: bold;
-        }
-
-        section {
-            padding-top: 20px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-        }
-
-        img {
-            display: block;
-            margin: 10px 0;
-            border-radius: 8px;
-        }
-
-        video, iframe {
-            display: block;
-            margin-top: 10px;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-        }
-
-        button {
-            padding: 10px 15px;
-            background-color: #0077cc;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #005fa3;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            border-top: 2px solid #ccc;
-            color: #555;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-            font-size: 1.5rem;
-            color: #0077cc;
-            text-decoration: none;
-        }
-
-        .social-icons a:hover {
-            color: #005fa3;
-        }
-
-        .resume-btn {
-            display: inline-block;
-            background-color: #28a745;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-top: 10px;
-        }
-
-        .resume-btn:hover {
-            background-color: #1e7e34;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid #ccc;
-            margin: 30px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>SANYA AGRAWAL-Portfolio</h1>
-        <p>📍 Jabalpur, Madhya Pradesh</p>
-        <ul style="list-style-type: none; padding: 0;">
-            <li>Email: <a href="mailto:agrawalsanya008@gmail.com">agrawalsanya008@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/sanyaagrawal" target="_blank">linkedin.com/in/sanyaagrawal</a></li>
-        </ul>
-
-        <!-- Social Media Icons -->
-        <div class="social-icons">
-            <a href="https://linkedin.com/in/sanyaagrawal" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/sanya008x" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:agrawalsanya008@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
-
-        <!-- Resume Button -->
-        <a class="resume-btn" href="Sanya_Agrawal_Resume.pdf" target="_blank">📄 Open Resume</a>
-    </header>
-
-    <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-left">
+            <a href="#" class="site-title">Sanya Agrawal</a>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-social-icons">
+                <a href="https://linkedin.com/in/sanyaagrawal" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/sanya008x" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <a class="resume-btn" href="Sanya_Agrawal_Resume.pdf" target="_blank">Resume</a>
+        </div>
     </nav>
 
-    <main>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="sanya_photo.jpg" alt="A photo of Sanya Agrawal" width="200">
+    <header class="hero-section">
+        <div class="hero-image">
+            <img src="sanya_photo.jpg" alt="A photo of Sanya Agrawal">
+        </div>
+        <div class="hero-content">
+            <h1>Hi, I'm Sanya Agrawal.</h1>
             <p>
                 Passionate Computer Science and Business Systems student with a drive to build impactful web solutions. 
-                Skilled in full stack development and data visualization. Eager to contribute to innovative tech projects and grow as a software developer.
+                Eager to contribute to innovative tech projects and grow as a software developer.
+            </p>
+            <a href="#contact" class="primary-btn">Contact Me</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate Computer Science and Business Systems student with a strong drive to build impactful web solutions.
+                My interests lie in full-stack development and data visualization, and I'm always eager to contribute to innovative tech projects.
+                I believe in continuous learning and growth as a software developer, striving to create efficient, user-friendly, and scalable applications.
+                My academic journey at Gyan Ganga Institute of Technology and Science has provided me with a solid foundation in both technical and business aspects.
             </p>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="card">
             <h2>My Skills</h2>
-            <h3>Languages</h3>
-            <p>Python, JavaScript, C++, C, SQL</p>
-            <h3>Web Technologies</h3>
-            <p>React, Node.js, React Native, HTML, CSS</p>
-            <h3>Databases</h3>
-            <p>MongoDB, MySQL</p>
-            <h3>AI/ML</h3>
-            <p>TensorFlow, PyTorch</p>
-            <h3>Developer Tools</h3>
-            <p>Git, GitHub, Docker, Kubernetes, Power BI</p>
-            <h3>Cloud</h3>
-            <p>AWS (EC2, S3)</p>
+            <div class="skills-grid">
+                <div>
+                    <h3>Languages</h3>
+                    <p>Python, JavaScript, C++, C, SQL</p>
+                </div>
+                <div>
+                    <h3>Web Technologies</h3>
+                    <p>React, Node.js, React Native, HTML, CSS</p>
+                </div>
+                <div>
+                    <h3>Databases</h3>
+                    <p>MongoDB, MySQL</p>
+                </div>
+                <div>
+                    <h3>AI/ML</h3>
+                    <p>TensorFlow, PyTorch</p>
+                </div>
+                <div>
+                    <h3>Developer Tools</h3>
+                    <p>Git, GitHub, Docker, Kubernetes, Power BI</p>
+                </div>
+                <div>
+                    <h3>Cloud</h3>
+                    <p>AWS (EC2, S3)</p>
+                </div>
+            </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="card">
             <h2>Projects & Hackathons</h2>
 
-            <article>
+            <article class="project-item">
                 <h3>Astra AI - National CyberShield Hackathon Finalist</h3>
                 <ul>
                     <li>Built a hybrid AI platform combining human-in-the-loop analysis and automation to counter anti-India campaigns.</li>
@@ -192,7 +103,7 @@
                 <p><strong>Tech Stack:</strong> Python, TensorFlow, PyTorch, React, Docker, Kubernetes.</p>
             </article>
 
-            <article>
+            <article class="project-item">
                 <h3>Kisan 360 - Brahmax 1.0 Hackathon Finalist</h3>
                 <ul>
                     <li>AI-powered platform for smart agriculture — crop recommendation, disease prediction, and irrigation planning.</li>
@@ -200,8 +111,8 @@
                 </ul>
                 <p><strong>Tech Stack:</strong> React Native, Node.js, TensorFlow, MongoDB, AWS.</p>
             </article>
-
-            <article>
+            
+            <article class="project-item">
                 <h3>Postal Seva Website</h3>
                 <ul>
                     <li>Developed a front-end postal services platform for real-time monitoring using HTML, CSS, and JavaScript.</li>
@@ -209,43 +120,25 @@
                 </ul>
             </article>
 
-            <article>
-                <h3>COVID-19 Data Analysis Dashboard</h3>
-                <ul>
-                    <li>Built an interactive Power BI dashboard with slicers, filters, map visuals, and trend analysis.</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Web Hosting on AWS EC2</h3>
-                <ul>
-                    <li>Configured EC2 instances, deployed web apps via Apache, and mapped domains for live hosting.</li>
-                </ul>
-            </article>
+            <a href="#" class="secondary-btn">View More Projects</a>
         </section>
 
-        <section id="education">
+        <section id="education" class="card">
             <h2>Education</h2>
-            <article>
+            <article class="edu-item">
                 <h3>Gyan Ganga Institute of Technology and Science (2022 - 2025)</h3>
-                <p>B.Tech in Computer Science and Business Systems</p>
-                <p>CGPA: 7.4</p>
+                <p>B.Tech in Computer Science and Business Systems - CGPA: 7.4</p>
             </article>
 
-            <article>
+            <article class="edu-item">
                 <h3>Christ Church Girls Senior Secondary School (2021 - 2022)</h3>
                 <p>Class XII (CBSE) - 70.2%</p>
             </article>
-
-            <article>
-                <h3>Christ Church Girls Senior Secondary School (2019 - 2020)</h3>
-                <p>Class X (CBSE) - 85.3%</p>
-            </article>
         </section>
 
-        <section id="certifications">
+        <section id="certifications" class="card">
             <h2>Certifications</h2>
-            <ul>
+            <ul class="cert-list">
                 <li>Power BI Intern - Cognifyz Technologies</li>
                 <li>CCNA (All 3 Modules) - Cisco Networking Academy</li>
                 <li>CLA - Programming Essentials in C</li>
@@ -257,19 +150,22 @@
             </ul>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-                <button type="submit">Send Message</button>
+        <section id="contact" class="card">
+            <h2>Get In Touch</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="primary-btn">Send Message</button>
             </form>
         </section>
     </main>

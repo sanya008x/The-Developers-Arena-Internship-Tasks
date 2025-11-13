@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Blog - Week 6 (CRUD + LocalStorage)</title>
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Personal Blog Editor ❤️</h1>
+        <div class="subtitle">Week 6 — CRUD with LocalStorage · Save posts in your browser</div>
+      </div>
+      <div class="small muted">LocalStorage key: <strong>"sandy_blog_posts"</strong></div>
+    </header>
+
+    <div class="grid">
+      <!-- Left Side: Post Creator + Post List -->
+      <div class="controls card">
+        <h2 style="margin-top:0">Create / Edit Post</h2>
+
+        <form id="postForm" autocomplete="off">
+          <div class="field">
+            <label for="title">Title <span class="muted">(required)</span></label>
+            <input id="title" name="title" type="text" required minlength="3" />
+            <div id="titleError" class="small muted" style="display:none">
+              Title must be at least 3 characters.
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="content">Content <span class="muted">(required)</span></label>
+            <textarea id="content" name="content" required minlength="8"></textarea>
+            <div id="contentError" class="small muted" style="display:none">
+              Content must be at least 8 characters.
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="tags">Tags <span class="muted">(comma separated)</span></label>
+            <input id="tags" name="tags" type="text" placeholder="web, javascript, notes" />
+          </div>
+
+          <div class="row">
+            <button id="saveBtn" type="submit">Save Post</button>
+            <button id="clearBtn" type="button" class="secondary">Clear</button>
+            <button id="exportBtn" type="button" class="secondary">Export JSON</button>
+          </div>
+
+          <div class="hint">Tip: Click a post title to load it for editing.</div>
+        </form>
+
+        <hr />
+
+        <div class="toolbar">
+          <input id="search" class="search" type="search" placeholder="Search title / content / tags" />
+          <select id="sortBy">
+            <option value="new">Newest</option>
+            <option value="old">Oldest</option>
+            <option value="title">Title (A→Z)</option>
+          </select>
+        </div>
+
+        <div class="posts-list" id="postsList"></div>
+      </div>
+
+      <!-- Right Side: Post Viewer -->
+      <div class="card viewer">
+        <div id="viewerInner">
+          <div class="empty">No post selected — create one or choose from the list.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modalBackdrop" class="modal-backdrop">
+    <div class="modal card">
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" style="display:none">Saved</div>
+
+  <!-- JS -->
+  <script src="blog.js"></script>
+</body>
+</html>
